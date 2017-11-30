@@ -7,7 +7,7 @@ define('MODEL_NAMESPACE', 'model\\');
 
 define('DEFAULT_CONTROLLER', 'IndexController');
 define('DEFAULT_ACTION', 'index');
-
+define('DEFAULT_ROWNUMBER', 20);
 define('LOGGING_ERROR', true);
 define('LOGGING_ROOT', ROOT_URI . 'logs/');
 define('LOGGING_ERROR_FILE', LOGGING_ROOT . 'error.log');

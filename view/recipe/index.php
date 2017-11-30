@@ -2,36 +2,30 @@
 ob_start();
 ?>
 
-    <h2>Prikaz modela</h2>
+    <h2>Prikaz svih recepata</h2>
 
     <table class="table table-bordered table-striped">
         <thead class="thead-inverse">
         <tr>
-            <th>Row</th>
-            <th>Name</th>
-            <th>Date</th>
-            <th>Model_ID</th>
-            <th>MDA Level</th>
-            <th>Status</th>
-            <th>Description</th>
-            <th>File</th>
+            <th>Broj</th>
+            <th>Naziv</th>
+            <th>Potrebno vreme</th>
+            <th>Autor</th>
+            <th>Vise</th>
         </tr>
         </thead>
         <tbody>
 
         <?php
-        /** @var \Model\Model $model */
-        foreach ($models as $model) {
+        $i = 1;
+        foreach ($recepti as $recept) {
             ?>
             <tr>
-                <td><?php echo $model->getModelElementId(); ?></td>
-                <td><?php echo $model->getName(); ?></td>
-                <td>14.6.2017.</td>
-                <td>M2</td>
-                <td><?= !empty($model->getIsInstanceOf()) ? $model->getIsInstanceOf()->getName() : ''; ?></td>
-                <td>Description of Model Name</td>
-                <td>Some sort of file</td>
-                <td>Some sort of file</td>
+                <td><?php echo $i++; ?></td>
+                <td><?php echo $recept->getName(); ?></td>
+                <td><?php echo $recept->getTimeNeeded() . ' minuta'; ?></td>
+                <td>Jelkis</td>
+                <td><a href="/recept/show/<?= $recept->getId(); ?>"><i class="fa fa-search" aria-hidden="true"></i></a></td>
             </tr>
         <?php } ?>
         </tbody>

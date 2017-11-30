@@ -5,7 +5,7 @@ return array(
         'port' => '3306',
         'username' => 'root',
         'password' => '',
-        'schema' => 'recepti'
+        'schema' => 'kuhinja'
     )
 
 );

@@ -115,7 +115,7 @@ class DBBroker
         $params = str_repeat('?, ', count($attributes));
         $params = substr($params, 0, -2);
 
-        $stmt = $this->pdo->prepare("CALL update$tableName($params)");
+        $stmt = $this->pdo->prepare("UPDATE $tableName($params)");
 
         $param = 0;
         foreach ($attributes as $column) {
@@ -134,7 +134,6 @@ class DBBroker
             if (LOGGING_ERROR) {
                 LoggingHelper::logToFile($e->getMessage(), $e->getTrace(), LOGGING_DBERROR_FILE);
             }
-
             throw $e;
         }
 

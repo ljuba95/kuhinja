@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Jelkishkina kuhinjica</a>
+            <a class="navbar-brand" href="/">Jelkishkina kuhinjica</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -17,7 +17,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Recepti<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Prikaz svih</a></li>
+                        <li><a href="recept/">Prikaz svih</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="#">Unos recepta</a></li>
                     </ul>
@@ -46,7 +46,7 @@
                 <?php
                     }else{
                         ?>
-                <li><a href="#">Prijavi se</a></li>
+                <li><a href="sessions/login">Prijavi se</a></li>
                 <?php
                     }
                 ?>
