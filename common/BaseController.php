@@ -9,6 +9,9 @@
 namespace common;
 
 
+use dao\UserDao;
+use model\User;
+
 class BaseController
 {
     protected function render(string $template, array $params = array()): string
@@ -53,4 +56,6 @@ class BaseController
         var_dump($v);
         die();
     }
+
+
 }

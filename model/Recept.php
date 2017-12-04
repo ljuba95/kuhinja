@@ -18,6 +18,7 @@ class Recept
     private $img;
     private $dateCreated;
     private $timeNeeded;
+    private $userId;
 
     /**
      * Recept constructor.
@@ -122,6 +123,23 @@ class Recept
     {
         $this->timeNeeded = $timeNeeded;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getUserId()
+    {
+        return $this->userId;
+    }
+
+    /**
+     * @param mixed $userId
+     */
+    public function setUserId($userId)
+    {
+        $this->userId = $userId;
+    }
+
 
 
 }

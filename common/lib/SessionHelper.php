@@ -2,6 +2,9 @@
 
 namespace common\lib;
 
+use dao\UserDao;
+use model\User;
+
 class SessionHelper
 {
 
@@ -12,7 +15,7 @@ class SessionHelper
 
     public static function get(string $key)
     {
-        return isset($_SESSION[$key]) ?: null;
+        return isset($_SESSION[$key]) ? $_SESSION[$key] : null;
     }
 
     public static function delete(string $key)
@@ -41,4 +44,16 @@ class SessionHelper
         return $value;
     }
 
+    public static function loggedUser(): ?User{
+        $userId = SessionHelper::get('user_id');
+        if (is_null($userId)){
+            return null;
+        }
+        $dao = new UserDao();
+        return $dao->loadById($userId);
+    }
+
+    public static function loginUser(User $user){
+        SessionHelper::set('user_id',$user->getId());
+    }
 }

@@ -32,7 +32,7 @@ class ReceptController extends BaseController
         $uri = '/recept/index/{$page}/';
         $recepti = $dao->loadPage($page);
 
-        SessionHelper::setFlashMessage('success','yaaaaaaay');
+        //SessionHelper::setFlashMessage('success','yaaaaaaay');
 
 
         echo $this->render('recipe/index.php', array('recepti' => $recepti, 'page' => $page, 'page' => $page, 'pages' => $pages, 'uri' => $uri));
@@ -41,6 +41,10 @@ class ReceptController extends BaseController
     public function showAction(int $id){
         $dao = new ReceptDao();
         $recept = $dao->loadById($id);
-        $this->dd($recept);
+
+        echo $this->render('recipe/show.php', array('recept' => $recept));
+//        $dao = new UserDao();
+//        $user = $dao->loadById($recept->getUserId());
+//        echo $this->render('recipe/show.php', array('recept' => $recept, 'user' => $user));
     }
 }

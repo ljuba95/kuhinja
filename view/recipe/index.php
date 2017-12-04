@@ -1,8 +1,8 @@
 <?php
 ob_start();
 ?>
-
-    <h2>Prikaz svih recepata</h2>
+<div class="col-lg-8">
+    <h1 class="mt-4">Prikaz svih recepata</h1>
 
     <table class="table table-bordered table-striped">
         <thead class="thead-inverse">
@@ -33,10 +33,10 @@ ob_start();
 
 <?php echo render('global/pagination.php', array('page' => $page, 'uri' => $uri, 'pages' => $pages)); ?>
 
-
+</div>
 <?php
 
 $html = ob_get_clean();
-$title = empty($title) ? 'prikaz modela' : $title;
+$title = empty($title) ? 'Prikaz svih recepata' : $title;
 ob_flush();
 echo render('global/main.php', array_merge($params, array('content' => $html, 'title' => $title)));

@@ -85,13 +85,16 @@ class DBBroker
 
         $stmt = $this->pdo->prepare("INSERT INTO $tableName VALUES($params)");
 
+
         $param = 0;
         foreach ($attributes as $val) {
-            $binded = $stmt->bindParam(++$param, $val);
+            $binded = $stmt->bindValue(++$param, $val);
             if (!$binded) {
                 break;
             }
         }
+
+        var_dump($stmt);
 
         try {
             if ($stmt->execute()) {

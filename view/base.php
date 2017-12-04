@@ -17,15 +17,19 @@
 <body>
 <?php echo $menu; ?>
 <div class="container">
+    <div class="row">
 
-    <?php echo $content; ?>
+        <?php echo $content; ?>
 
-    <?php echo render('global/javascript.php'); ?>
-    <?php if (isset($javascript)) {
-        echo $javascript;
-    }
-    ?>
+        <?php echo render('global/sidebar.php'); ?>
+    </div>
 </div>
+<?php echo render('global/footer.php'); ?>
+<?php echo render('global/javascript.php'); ?>
+<?php if (isset($javascript)) {
+    echo $javascript;
+}
+?>
 </body>
 
 

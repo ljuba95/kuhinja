@@ -9,3 +9,4 @@ foreach (['success', 'info', 'warning', 'danger'] as $messageType) {
         </p>
     <?php }
 } ?>
+<br>

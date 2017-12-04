@@ -17,6 +17,6 @@ use common\FrontController;
 
 $autoloader = new Autoloader();
 $autoloader->register();
-
+session_start();
 $frontCtrl = new FrontController();
 $frontCtrl->run();

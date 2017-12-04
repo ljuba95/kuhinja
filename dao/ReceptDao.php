@@ -36,8 +36,9 @@ class ReceptDao extends Dao
 
     public function loadById($id): ?Recept
     {
+
         $res = $this->db->query('SELECT * FROM recipes WHERE id = ' . $id);
-        return $this->getResults($res)[0];
+        return $this->populate($res[0]);
     }
 
     private function populate($row)
@@ -49,6 +50,7 @@ class ReceptDao extends Dao
         $recipe->setDateCreated($row['date_created']);
         $recipe->setTimeNeeded($row['time_needed']);
         $recipe->setImg($row['img']);
+        $recipe->setUserId($row['user_id']);
         return $recipe;
     }
 
