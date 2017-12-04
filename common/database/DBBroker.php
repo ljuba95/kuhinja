@@ -94,8 +94,6 @@ class DBBroker
             }
         }
 
-        var_dump($stmt);
-
         try {
             if ($stmt->execute()) {
                 return true;

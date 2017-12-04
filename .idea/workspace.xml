@@ -2,42 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f04c246-7323-4061-a876-92a87a136188" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/SessionsController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/UsersController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/UserDao.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/User.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendor/bootstrap/css/bootstrap-grid.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendor/bootstrap/css/bootstrap-grid.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendor/bootstrap/css/bootstrap-reboot.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendor/bootstrap/css/bootstrap-reboot.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendor/bootstrap/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendor/bootstrap/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendor/bootstrap/js/bootstrap.bundle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendor/bootstrap/js/bootstrap.bundle.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendor/bootstrap/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendor/bootstrap/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/global/footer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/global/sidebar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/recipe/show.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/sessions/register.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/sessions/signin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/BaseController.php" afterPath="$PROJECT_DIR$/common/BaseController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/database/DBBroker.php" afterPath="$PROJECT_DIR$/common/database/DBBroker.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/lib/SessionHelper.php" afterPath="$PROJECT_DIR$/common/lib/SessionHelper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/ReceptController.php" afterPath="$PROJECT_DIR$/controller/ReceptController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/ReceptDao.php" afterPath="$PROJECT_DIR$/dao/ReceptDao.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/Recept.php" afterPath="$PROJECT_DIR$/model/Recept.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/default.css" afterPath="$PROJECT_DIR$/public/css/default.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/base.php" afterPath="$PROJECT_DIR$/view/base.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/global/alert-messages.php" afterPath="$PROJECT_DIR$/view/global/alert-messages.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/global/css.php" afterPath="$PROJECT_DIR$/view/global/css.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/global/javascript.php" afterPath="$PROJECT_DIR$/view/global/javascript.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/menu/menu.php" afterPath="$PROJECT_DIR$/view/menu/menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/recipe/index.php" afterPath="$PROJECT_DIR$/view/recipe/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/sessions/signin.php" afterPath="$PROJECT_DIR$/view/sessions/signin.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,7 +14,32 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="DBBroker.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/database/DBBroker.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="96" column="13" lean-forward="true" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
+              <folding>
+                <element signature="e#35#64#0#PHP" expanded="true" />
+                <marker date="1512430372554" expanded="true" signature="1938:1950" ph="INSERT INTO ${$tableName}... " />
+                <marker date="1512430372554" expanded="true" signature="1938:1976" ph="INSERT INTO ${$tableName}... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signin.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/view/sessions/signin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -66,6 +58,11 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Milos Ljubisavljevic &lt;ljuba95@hotmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -98,12 +95,12 @@
         <option value="$PROJECT_DIR$/common/BaseController.php" />
         <option value="$PROJECT_DIR$/common/lib/SessionHelper.php" />
         <option value="$PROJECT_DIR$/dao/UserDao.php" />
-        <option value="$PROJECT_DIR$/common/database/DBBroker.php" />
-        <option value="$PROJECT_DIR$/view/sessions/signin.php" />
         <option value="$PROJECT_DIR$/view/sessions/register.php" />
         <option value="$PROJECT_DIR$/controller/UsersController.php" />
         <option value="$PROJECT_DIR$/controller/SessionsController.php" />
         <option value="$PROJECT_DIR$/view/menu/menu.php" />
+        <option value="$PROJECT_DIR$/common/database/DBBroker.php" />
+        <option value="$PROJECT_DIR$/view/sessions/signin.php" />
       </list>
     </option>
   </component>
@@ -145,7 +142,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -255,10 +251,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../labis/ModelReposApp-2.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
@@ -303,7 +300,8 @@
       <workItem from="1511383133071" duration="33000" />
       <workItem from="1512071300156" duration="10091000" />
       <workItem from="1512138205624" duration="13000" />
-      <workItem from="1512414528217" duration="15606000" />
+      <workItem from="1512414528217" duration="15673000" />
+      <workItem from="1512430366315" duration="368000" />
     </task>
     <task id="LOCAL-00001" summary="uradjena arhitektura">
       <created>1511117339796</created>
@@ -319,31 +317,39 @@
       <option name="project" value="LOCAL" />
       <updated>1511120730338</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="zavrseno logovanje i prikaz recepta">
+      <created>1512430201783</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1512430201783</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40757000" />
+    <option name="totallyTimeSpent" value="41192000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20833333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20833333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.307611" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39852008" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39852008" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -382,7 +388,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="uradjena arhitektura" />
     <MESSAGE value="w/e" />
-    <option name="LAST_COMMIT_MESSAGE" value="w/e" />
+    <MESSAGE value="zavrseno logovanje i prikaz recepta" />
+    <option name="LAST_COMMIT_MESSAGE" value="zavrseno logovanje i prikaz recepta" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -417,8 +424,8 @@
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="e#35#64#0#PHP" expanded="true" />
-            <marker date="1512427827981" expanded="true" signature="1938:1950" ph="INSERT INTO ${$tableName}... " />
-            <marker date="1512427827981" expanded="true" signature="1938:1976" ph="INSERT INTO ${$tableName}... " />
+            <marker date="1512430372554" expanded="true" signature="1938:1950" ph="INSERT INTO ${$tableName}... " />
+            <marker date="1512430372554" expanded="true" signature="1938:1976" ph="INSERT INTO ${$tableName}... " />
           </folding>
         </state>
       </provider>
@@ -453,8 +460,8 @@
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="e#35#64#0#PHP" expanded="true" />
-            <marker date="1512427827981" expanded="true" signature="1938:1950" ph="INSERT INTO ${$tableName}... " />
-            <marker date="1512427827981" expanded="true" signature="1938:1976" ph="INSERT INTO ${$tableName}... " />
+            <marker date="1512430372554" expanded="true" signature="1938:1950" ph="INSERT INTO ${$tableName}... " />
+            <marker date="1512430372554" expanded="true" signature="1938:1976" ph="INSERT INTO ${$tableName}... " />
           </folding>
         </state>
       </provider>
@@ -729,14 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/sessions/signin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="40" lean-forward="false" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/sessions/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
@@ -750,7 +749,7 @@
         <state relative-caret-position="484">
           <caret line="51" column="23" lean-forward="false" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
           <folding>
-            <element signature="e#115#141#0#PHP" expanded="true" />
+            <element signature="e#115#141#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -760,18 +759,6 @@
         <state relative-caret-position="153">
           <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/database/DBBroker.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-          <folding>
-            <element signature="e#35#64#0#PHP" expanded="true" />
-            <marker date="1512427827981" expanded="true" signature="1938:1950" ph="INSERT INTO ${$tableName}... " />
-            <marker date="1512427827981" expanded="true" signature="1938:1976" ph="INSERT INTO ${$tableName}... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -816,6 +803,26 @@
             <marker date="1512426873675" expanded="true" signature="516:569" ph="SELECT * FRO... users" />
             <marker date="1512426873675" expanded="true" signature="516:570" ph="SELECT * FRO... users" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/database/DBBroker.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="96" column="13" lean-forward="true" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
+          <folding>
+            <element signature="e#35#64#0#PHP" expanded="true" />
+            <marker date="1512430372554" expanded="true" signature="1938:1950" ph="INSERT INTO ${$tableName}... " />
+            <marker date="1512430372554" expanded="true" signature="1938:1976" ph="INSERT INTO ${$tableName}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/sessions/signin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
