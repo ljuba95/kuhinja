@@ -13,6 +13,7 @@ use common\BaseController;
 use common\lib\ImageHelper;
 use common\lib\SessionHelper;
 use dao\ReceptDao;
+use model\Recept;
 
 class ReceptController extends BaseController
 {
@@ -61,15 +62,24 @@ class ReceptController extends BaseController
 
     public function createAction(){
         $user = SessionHelper::loggedUser();
+        if(is_null($user)){
+            SessionHelper::setFlashMessage('info','Morate biti ulogovani da bi postavili novi recept.');
+            echo $this->render('global/main.php', array('content' => ''));
+            return;
+        }
+
+        $recept = new Recept();
         $img = new ImageHelper($_FILES['img']);
         if($img->uploaded){
+            $img->file_new_name_body   = $_FILES['img']['name'] . '_resized';
             $img->image_resize         = true;
             $img->image_x              = 900;
             $img->image_ratio_y        = true;
-            $img->process('/var/www/elab/Recepti/storage');
+            $img->process('../storage');
             if ($img->processed) {
                 echo 'image resized';
                 echo $img->file_dst_pathname;
+                echo $img->log;
                 //todo: rip
                 $img->clean();
             }
