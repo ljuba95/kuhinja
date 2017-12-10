@@ -11,6 +11,7 @@ namespace controller;
 
 use common\BaseController;
 use common\lib\SessionHelper;
+use dao\ReceptDao;
 use dao\UserDao;
 use model\User;
 
@@ -58,6 +59,21 @@ class UsersController extends BaseController
             echo $this->render('sessions/register.php');
             return;
         }
+
+    }
+
+    public function receptiAction($id){
+        $user = SessionHelper::loggedUser();
+        if($user->getId() != $id){
+            $this->newAction();
+            return;
+        }
+
+        $dao = new ReceptDao();
+        $recepti = $dao->loadByUser($id);
+
+        echo $this->render('user/recipes.php',['recepti' => $recepti]);
+
 
     }
 }

@@ -24,7 +24,7 @@ ob_start();
                 <td><?php echo $i++; ?></td>
                 <td><?php echo $recept->getName(); ?></td>
                 <td><?php echo $recept->getTimeNeeded() . ' minuta'; ?></td>
-                <td>Jelkis</td>
+                <td><?= $recept->userName ?></td>
                 <td><a href="/recept/show/<?= $recept->getId(); ?>"><i class="fa fa-search" aria-hidden="true"></i></a></td>
             </tr>
         <?php } ?>

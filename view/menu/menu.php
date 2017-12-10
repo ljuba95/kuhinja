@@ -27,9 +27,10 @@
                         <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?= $user->getName() ?></a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="/users/recepti/<?= $user->getId() ?>">Moji recepti</a>
                             <a class="dropdown-item" href="/recept/insert">Novi recept</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/user/edit/<?= $user->getId() ?>">Podešаvanja</a>
+                            <a class="dropdown-item" href="/users/edit/<?= $user->getId() ?>">Podešаvanja</a>
                             <a class="dropdown-item" href="/sessions/destroy">Odjavi se</a>
                         </div>
                     </li>

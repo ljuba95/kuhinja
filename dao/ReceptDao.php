@@ -26,12 +26,23 @@ class ReceptDao extends Dao
         return $this->getResults($res);
     }
 
+    public function loadByUser($id): array
+    {
+        $res = $this->db->query('SELECT * FROM recipes WHERE user_id = ' . $id);
+        return $this->getResults($res);
+    }
+
     public function count()
     {
         $query = 'SELECT COUNT(*) as ct FROM recipes';
 
         list($ct) = $this->db->query($query);
         return reset($ct);
+    }
+
+    public function save(Recept $recept) : bool {
+
+        return $this->db->insert('recipes',array(null, $recept->getName(),$recept->getText(),$recept->getImg(),$recept->getTimeNeeded(),$recept->getDateCreated(),$recept->getUserId()));
     }
 
     public function loadById($id): ?Recept
@@ -41,6 +52,11 @@ class ReceptDao extends Dao
         return $this->populate($res[0]);
     }
 
+    public function update(Recept $recept) : bool{
+
+        return $this->db->update('recipes', ['name','text','img','time_needed','date_created'],
+            [$recept->getName(),$recept->getText(),$recept->getImg(),$recept->getTimeNeeded(),$recept->getDateCreated()], 'id = '. $recept->getId());
+    }
     private function populate($row)
     {
         $recipe = new Recept();
@@ -64,5 +80,10 @@ class ReceptDao extends Dao
 
         }
         return $arr;
+    }
+
+    public function delete($id) : bool
+    {
+        return $this->db->delete('recipes', $id);
     }
 }

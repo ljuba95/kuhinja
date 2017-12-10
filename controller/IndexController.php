@@ -13,6 +13,7 @@ class IndexController extends BaseController
 {
     public function indexAction()
     {
-        echo $this->render('global/main.php', array('content' => ''));
+        $ctrl = new ReceptController();
+        $ctrl->indexAction();
     }
 }

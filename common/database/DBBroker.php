@@ -109,18 +109,29 @@ class DBBroker
         throw new \Exception('Problem with bind parameters');
     }
 
-    public function update(string $tableName, array $attributes, string $condition = null): bool
+    public function update(string $tableName, array $attributes, array $values, string $condition = null): bool
     {
         $this->setNames();
 
-        $params = str_repeat('?, ', count($attributes));
-        $params = substr($params, 0, -2);
+        if(count($attributes) != count($values)){
+            return false;
+        }
 
-        $stmt = $this->pdo->prepare("UPDATE $tableName($params)");
+        $statement = "UPDATE $tableName SET ";
+
+        foreach ($attributes as $attribute) {
+            $statement .= $attribute . ' = :' . $attribute . ', ';
+        }
+        $statement = substr($statement, 0, -2);
+
+        $statement .= " WHERE $condition";
+
+        $stmt = $this->pdo->prepare($statement);
+
 
         $param = 0;
         foreach ($attributes as $column) {
-            $binded = $stmt->bindParam(++$param, $column['value'], $column['type'], !empty($column['columnSize']) ? $column['columnSize'] : null);
+            $binded = $stmt->bindParam(':'.$column, $values[$param++]);
             if (!$binded) {
                 break;
             }
@@ -131,7 +142,6 @@ class DBBroker
                 return true;
             }
         } catch (\Exception $e) {
-            echo 'exception za insert';
             if (LOGGING_ERROR) {
                 LoggingHelper::logToFile($e->getMessage(), $e->getTrace(), LOGGING_DBERROR_FILE);
             }
@@ -139,6 +149,11 @@ class DBBroker
         }
 
         throw new \Exception('Problem with bind parameters');
+    }
+
+    public function delete(string $tableName, $id) :bool{
+        $stmt = $this->pdo->prepare("DELETE FROM $tableName WHERE id = ?");
+        return $stmt->execute(array($id));
     }
 
     public function query($query, $loadOne = false): array
