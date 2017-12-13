@@ -4,7 +4,7 @@ ob_start();
 <div class="col-lg-8">
     <h1 class="mt-4">Prikaz svih recepata</h1>
 
-    <table class="table table-bordered table-striped">
+    <table class="table table-bordered table-striped" id="main-table">
         <thead class="thead-inverse">
         <tr>
             <th>Broj</th>
@@ -14,7 +14,7 @@ ob_start();
             <th>Vise</th>
         </tr>
         </thead>
-        <tbody>
+        <tbody id="main-table-body">
 
         <?php
         $i = 1;
@@ -34,6 +34,7 @@ ob_start();
 <?php echo render('global/pagination.php', array('page' => $page, 'uri' => $uri, 'pages' => $pages)); ?>
 
 </div>
+
 <?php
 
 $html = ob_get_clean();

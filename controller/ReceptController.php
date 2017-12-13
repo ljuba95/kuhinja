@@ -76,7 +76,7 @@ class ReceptController extends BaseController
             echo $this->render('global/main.php', array('content' => ''));
             return;
         }
-        
+
         $recept = new Recept();
         $img = new ImageHelper($_FILES['img']);
         if ($img->uploaded) {
@@ -184,6 +184,21 @@ class ReceptController extends BaseController
         $this->insertAction();
     }
 
+    public function searchAction($query = ''){
+
+        $dao = new ReceptDao();
+        $recepti = $dao->searchByName($query);
+
+        $userDao = new UserDao();
+
+        foreach ($recepti as $recept){
+            $recept->userName = $userDao->loadById($recept->getUserId())->getName();
+        }
+
+        echo $this->render('recipe/search.php',array('recepti' => $recepti));
+
+
+    }
 
 
 }

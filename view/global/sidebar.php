@@ -1,19 +1,17 @@
 <div class="col-md-4">
 
-    <!-- Search Widget -->
     <div class="card my-4">
         <h5 class="card-header">Pronađi</h5>
         <div class="card-body">
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search...">
+                <input id="input-box" type="text" class="form-control" placeholder="Search...">
                 <span class="input-group-btn">
-                  <button class="btn btn-secondary" type="button"><i class="fa fa-smile-o icon-large" aria-hidden="true"></i></button>
+                  <button class="btn btn-secondary" type="button" id="input-btn"><i class="fa fa-smile-o icon-large" aria-hidden="true"></i></button>
                 </span>
             </div>
         </div>
     </div>
 
-    <!-- Categories Widget -->
     <div class="card my-4">
         <h5 class="card-header">Kategorije</h5>
         <div class="card-body">

@@ -86,4 +86,11 @@ class ReceptDao extends Dao
     {
         return $this->db->delete('recipes', $id);
     }
+
+    public function searchByName($query)
+    {
+        $q = $this->createQuery('recipes', "name LIKE '$query%'", false,1);
+        $res = $this->db->query($q);
+        return $this->getResults($res);
+    }
 }
